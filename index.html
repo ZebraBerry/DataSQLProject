@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+  
+  
+  <!-- Import Vega & Vega-Lite -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+  <title>My Data Project</title>
+
+
+</head>
+
+<body>
+  <div class="page">
+
+
+        <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+                  <h1>My Data Project</h1>
+        <p>By Stacey Smith</p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h2>Initial Project Outline</h2>
+        <p>This is my data project in which I intend to:</p>
+        <ul>
+  <li>Find a raw data source/s</li>
+  <li>Store the data in a database</li>
+  <li>Use SQL to clean the data</li>
+            <li>Develop a data warehouse </li>
+            <li>Use the data to create visualisation</li>
+</ul>
+        <p>The aim of this project is to practise my skills that I learnt during uni in regards to data and learn some new skills, particularly:</p>
+                <ul>
+  <li>Create a basic webpage using HTML & CSS</li>
+  <li>Find raw data for a database, maybe with an API or multiple data sources</li>
+  <li>Create a local database using SQL</li>
+            <li>Insert a lot of data into the database, maybe with Python </li>
+            <li>Data manipulation and cleaning</li>
+                  <li>Create a datawarehouse</li>
+                  <li>Design visualisations to present the data</li>
+</ul>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+
+      <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-2-3">
+        <div class="description description-left">
+          <p>Column 1</p>
+          <div id="vis1" class="vis-container"></div>
+         </div>
+      </div>
+      <div class="pure-u-1-3">
+    <p>Column 2</p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+
+
+    
+  </div> <!-- end page -->
+
+  <script type="text/javascript">
+    var specVis1 = "./js/blankchart.vg.json";
+    
+
+  vegaEmbed('#vis1', specVis1).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+    
+  </script>
+</body>
+
+</html>
